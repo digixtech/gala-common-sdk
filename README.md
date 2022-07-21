@@ -1,1 +1,1 @@
-# gala-ccommon-sdk
+# gala-common-sdk
