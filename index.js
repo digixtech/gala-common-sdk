@@ -1,12 +1,7 @@
-import { generate } from 'randomstring'
-
-const genRandomString = function (length = 5) {
-    return generate({
-        length,
-        charset: 'alphabetic'
-    })
-}
+const GenerateUtils = require('./utils/generate')
+const Logger = require('./utils/logger')
 
 export default {
-    genRandomString
+    GenerateUtils,
+    Logger
 }
