@@ -1,6 +1,8 @@
+const config = require('config')
+
 const Crypto = {
-    KEY: 'GALA_KYC',
-    DS_KEY: 'KYCGALA'
+    KEY: config.get('KEY'),
+    DS_KEY: config.get('DS_KEY')
 }
 
 export default Crypto
