@@ -1,10 +1,15 @@
 const crypto = require('crypto')
-const key = 'Gala_KYC'
-const ds4Key = 'KYCGALA'
+const key = getKey('Gala_KYC')
+const ds4Key = getKey('KYCGALA')
 const algorithm = 'aes-256-ecb'
 const ds4Algorithm = 'aes-128-ecb'
 const Logger = require('../utils/logger')
 const prefix = 'kyc'
+
+function getKey(key) {
+  return key
+}
+
 function padString(str) {
   const range = 32
   const length = (str.length % range)
