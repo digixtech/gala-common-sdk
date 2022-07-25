@@ -1,6 +1,6 @@
 const Crypto = {
-    KEY: process.env.KEY,
-    DS_KEY: process.env.DS_KEY
+    KEY: 'GALA_KYC',
+    DS_KEY: 'KYCGALA'
 }
 
 export default Crypto
