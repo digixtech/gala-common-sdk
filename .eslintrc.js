@@ -1,3 +1,3 @@
 import { Configuration } from './constant/eslint'
 
-export default Configuration
+module.exports =  Configuration

@@ -5,4 +5,4 @@ const Crypto = {
     DS_KEY: config.get('DS_KEY')
 }
 
-export default Crypto
+module.exports =  Crypto

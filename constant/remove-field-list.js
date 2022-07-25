@@ -3,4 +3,4 @@ const removeFieldList = [
   'idCardImage'
 ]
 
-export default removeFieldList
+module.exports =  removeFieldList

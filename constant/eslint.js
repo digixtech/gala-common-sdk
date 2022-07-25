@@ -18,4 +18,4 @@ const Eslint = {
   }
 }
 
-export default Eslint
+module.exports =  Eslint

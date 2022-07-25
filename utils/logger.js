@@ -1,9 +1,5 @@
-import moment from 'moment'
-import { createLogger, transports, format } from 'winston'
-import { includes } from '../constant/remove-field-list'
-
-import { blue, magenta, yellow, america, green, red } from 'colors'
-import { inspect } from 'util'
+const moment = require('moment')
+const { createLogger, transports, format } = require('winston')
 
 const logFormatDefault = format.combine(format.colorize(), format.timestamp(), format.printf((info) => `[${info.level}]${blue(moment().format('YYYY-MM-DD HH:mm:ss'))}: ${info.message}`))
 const logFormatNoDate = format.combine(format.colorize(), format.timestamp(), format.printf((info) => `${info.message}`))
@@ -119,7 +115,7 @@ const hapiApi = (request, options = { showResponse: false, showRequest: true }) 
   loggerNoDate.info(message)
 }
 
-export default {
+module.exports =  {
   info,
   error,
   network,

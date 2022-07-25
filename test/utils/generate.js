@@ -1,7 +1,7 @@
-import { genRandomNumber as _genRandomNumber } from '../../utils/generate'
+const GenerateUtils = require('../../utils/generate')
 
 const genRandomNumber = () => {
-  const result = _genRandomNumber()
+  const result = GenerateUtils.randomAll()
   console.log('[debug]result', result)
 }
 

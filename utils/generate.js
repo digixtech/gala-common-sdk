@@ -1,15 +1,15 @@
-import { generate } from 'randomstring'
-import { shuffle } from 'underscore'
+const randomString = require('randomstring')
+const _ = require('underscore')
 
 const genRandomString = function (length = 5) {
-  return generate({
+  return randomString.generate ({
     length,
     charset: 'alphabetic'
   })
 }
 
 const genRandomNumber = function (length = 5) {
-  return generate({
+  return randomString.generate ({
     length,
     charset: 'numeric'
   })
@@ -21,11 +21,11 @@ const randomAll = (stringLength = 2, numberLength = 3) => {
   const number = genRandomNumber(numberLength)
   const tempContent = string + number
   const content = tempContent.split('')
-  shuffle(content)
-  return shuffle(content).toString().replace(/,/gi, '')
+  _.shuffle(content)
+  return _.shuffle(content).toString().replace(/,/gi, '')
 }
 
 
-export default {
+module.exports =  {
   randomAll
 }
