@@ -1,5 +1,5 @@
 const crypto = require('crypto')
-const _crypto = require('../constant/crypto').default
+const _crypto = require('../constant/crypto')
 const key = _crypto.KEY
 const ds4Key = _crypto.DS_KEY
 const algorithm = 'aes-256-ecb'
